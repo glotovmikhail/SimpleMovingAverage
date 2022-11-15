@@ -61,6 +61,7 @@ void TestHelper::ExportMeasurements()
     file << "Type measurements\n";
     file << "double," << typeMeasurements[0] <<",\n";
     file << "float," << typeMeasurements[1];
+    file.close();
 }
 
 void TestHelper::GenerateDoubles()
