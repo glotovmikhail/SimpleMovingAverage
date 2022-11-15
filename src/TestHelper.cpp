@@ -7,6 +7,7 @@
 TestHelper::TestHelper()
 {
     windowSizeMeasurements.reserve(6);
+    windowSizeMeasurementsFloat.reserve(6);
     typeMeasurements.reserve(2);
     GenerateDoubles();
     GenerateFloates();
