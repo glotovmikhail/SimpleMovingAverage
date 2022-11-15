@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/interviews/SimpleMovingAverage/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\SimpleMovingAverage.dir\\src\\main.cpp.obj -c C:\\interviews\\SimpleMovingAverage\\src\\main.cpp",
+  "file": "C:/interviews/SimpleMovingAverage/src/main.cpp"
+},
+{
+  "directory": "C:/interviews/SimpleMovingAverage/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   -g -o CMakeFiles\\SimpleMovingAverage.dir\\src\\TestHelper.cpp.obj -c C:\\interviews\\SimpleMovingAverage\\src\\TestHelper.cpp",
+  "file": "C:/interviews/SimpleMovingAverage/src/TestHelper.cpp"
+}
+]
