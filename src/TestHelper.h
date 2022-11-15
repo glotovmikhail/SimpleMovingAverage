@@ -8,11 +8,21 @@
 
 class TestHelper
 {
+public:
+    TestHelper();
 
 public:
-    void SetWindow(const int & w) { window = w; }
+    void RunMeasurementTest();
+    void ShowMeasurements();
+    void ExportMeasurements();
+
+private:
     void GenerateDoubles();
     void GenerateFloates();
+
+private:
+    void WindowSizeMeasurementTest();
+    void TypeMeasurementTest();
 
 public:
     template <typename T>
@@ -49,7 +59,7 @@ private:
     std::vector<T> GenerateVector()
     {
         std::vector<T> v;
-        for (int i = 0; i < 1000000; ++i)
+        for (int i = 0; i < totalValues; ++i)
         {
             v.push_back(TestHelper::randomD(std::numeric_limits<T>::lowest(), std::numeric_limits<T>::max()));
         }
@@ -57,7 +67,11 @@ private:
         return v;
     }
 private:
-    int window;
+    const int totalValues = 10000000;
     std::vector<double> double_data;
     std::vector<float>  float_data;
+
+    std::vector<int> windowSizeMeasurements;
+    std::vector<int> windowSizeMeasurementsFloat;
+    std::vector<int> typeMeasurements;
 };

@@ -3,9 +3,15 @@
 #include <vector>
 
 template <typename T>
-std::vector<T> ComputeSMA(const int & window, const std::vector<T> & data)
+std::vector<T> ComputeSMA(size_t window, const std::vector<T> & data)
 {
     static_assert(std::is_floating_point<T>::value);
+
+    if (data.empty())
+    {
+        std::cout << "Data is empty.\n";
+        return {};
+    }
 
     if (window > data.size())
     {

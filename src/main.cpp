@@ -11,7 +11,7 @@ int main() {
 
     std::cout << "Do you want to check correctness of the function? [Y/any]\n";
     char userAnswer;
-    int k;
+    size_t k;
     std::string datatype;
     int datasize = 0;
     std::vector<double> vd;
@@ -76,6 +76,11 @@ int main() {
             TestHelper::CompareAnswers(ComputeSMA(k, vd), answers);
         }
     }
+
+    TestHelper helper;
+    helper.RunMeasurementTest();
+    helper.ShowMeasurements();
+    helper.ExportMeasurements();
 
     std::cout << "Enter any symbol to finish:";
     char a;

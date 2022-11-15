@@ -122,7 +122,18 @@ CMakeFiles/SimpleMovingAverage.dir/src/TestHelper.cpp.obj: C:/interviews/SimpleM
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_numeric.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cmath \
   C:/MinGW/include/math.h \
-  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits \
+  C:/interviews/SimpleMovingAverage/src/SMA.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/chrono \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ratio \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ctime \
+  C:/MinGW/include/time.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/parse_numbers.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/codecvt.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc
 
 CMakeFiles/SimpleMovingAverage.dir/src/main.cpp.obj: C:/interviews/SimpleMovingAverage/src/main.cpp \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/numeric \
@@ -434,6 +445,8 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/gthr-default.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h:
 
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/codecvt.h:
+
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/string:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ostream_insert.h:
@@ -449,6 +462,8 @@ C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio:
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cerrno:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_string.tcc:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/system_error:
 
@@ -484,10 +499,24 @@ C:/MinGW/include/math.h:
 
 C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits:
 
+C:/interviews/SimpleMovingAverage/src/SMA.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/chrono:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ratio:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ctime:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/parse_numbers.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++io.h:
+
+C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/fstream.tcc:
+
 C:/interviews/SimpleMovingAverage/src/main.cpp:
 
 C:/MinGW/include/string.h:
 
 C:/MinGW/include/strings.h:
-
-C:/interviews/SimpleMovingAverage/src/SMA.h:
