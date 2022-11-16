@@ -1,0 +1,17 @@
+# Ignore all files
+*
+
+# Unignore all dirs
+!*/
+
+# Ignore vscode config
+.vscode/*
+
+# Ignore CMake build dir
+/build
+
+# Unignore all with extensions
+!*.*
+
+# Ignore object files
+*.o

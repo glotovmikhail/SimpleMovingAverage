@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\SimpleMovingAverage.dir/objects.a
-C:\MinGW\bin\ar.exe qc CMakeFiles\SimpleMovingAverage.dir/objects.a @CMakeFiles\SimpleMovingAverage.dir\objects1
-C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\SimpleMovingAverage.dir/objects.a -Wl,--no-whole-archive -o SimpleMovingAverage.exe -Wl,--out-implib,libSimpleMovingAverage.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SimpleMovingAverage.dir\linkLibs.rsp

@@ -1,5 +1,0 @@
-C:/interviews/SimpleMovingAverage/build/CMakeFiles/SimpleMovingAverage.dir
-C:/interviews/SimpleMovingAverage/build/CMakeFiles/package.dir
-C:/interviews/SimpleMovingAverage/build/CMakeFiles/package_source.dir
-C:/interviews/SimpleMovingAverage/build/CMakeFiles/edit_cache.dir
-C:/interviews/SimpleMovingAverage/build/CMakeFiles/rebuild_cache.dir
