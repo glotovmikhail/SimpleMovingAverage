@@ -21,24 +21,48 @@ std::vector<T> ComputeSMA(size_t window, const std::vector<T> & data)
         return {};
     }
 
-    std::vector<T> sma;
-    sma.reserve(data.size() - window);
+    std::vector<T> sma(data.size() - window, 0.0);
 
-    // compute initial sma
-    long double currentSMA = 0;
-    for (size_t i = 0; i < window; ++i)
+    // compute initial SMA value
+    T currentSMA = 0;
     {
-        currentSMA += static_cast<long double>(data[i]);
+        T currentSum = data[0];
+
+        for (size_t i = 1; i < window; ++i)
+        {
+            if (currentSum == 0 || std::isfinite(currentSum + data[i])) // check for possible overflow
+            {
+                currentSum += data[i];
+            }
+            else
+            {
+                currentSMA += (currentSum / window) + (data[i] / window); // compute separately if there is an overflow
+                currentSum = 0;
+            }
+        }
+
+        if (currentSum != 0)
+        {
+            currentSMA += (currentSum / window);
+        }
+
+        sma[0] = (currentSMA);
     }
-    currentSMA /= window;
-    sma.push_back(currentSMA);
 
     // compute other sma values
     for (size_t i = window; i < data.size(); ++i)
     {
-        long double diff = (static_cast<long double>(data[i]) - static_cast<long double>(data[i - window])) / window;
-        currentSMA += diff;
-        sma.push_back(currentSMA);
+        if (std::isfinite(data[i] - data[i - window]))
+        {
+            T diff = (data[i] - data[i - window]) / window;
+            currentSMA += diff;
+        }
+        else
+        {
+            currentSMA += (data[i] / window) - (data[i - window] / window);
+        }
+
+        sma[i - window + 1] = currentSMA;
     }
 
     return sma;

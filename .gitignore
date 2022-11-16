@@ -4,14 +4,14 @@
 # Unignore all dirs
 !*/
 
-# Ignore vscode config
-.vscode/*
-
 # Ignore CMake build dir
 /build
 
 # Unignore all with extensions
 !*.*
+
+# Ignore vscode config
+.vscode/*
 
 # Ignore object files
 *.o

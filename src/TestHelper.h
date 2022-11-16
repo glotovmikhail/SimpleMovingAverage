@@ -39,6 +39,7 @@ public:
             {
                 std::cout << "Result of the funtion is incorrect.\n";
                 std::cout << "Different answers: diff = " << first[i] - second[i] << ", At = " << i << "\n";
+                std::cout << "First = " << first[i] << ", Second = " << second[i] << "\n";
                 return false;
             }
         }
